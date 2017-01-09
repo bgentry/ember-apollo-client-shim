@@ -1,26 +1,33 @@
 # ember-apollo-client-shim
 
-This README outlines the details of collaborating on this Ember addon.
+Use [apollo-client](https://github.com/apollo-stack/apollo-client) in your Ember project.
+
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd ember-apollo-client-shim`
-* `npm install`
-* `bower install`
+```
+ember install ember-apollo-client-shim
+```
 
-## Running
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+## Usage
 
-## Running Tests
+```js
+import { ApolloClient } from 'apollo-client';
+
+let client = new ApolloClient(...);
+```
+
+
+## Developing
+
+### Running Tests
 
 * `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
 * `ember test`
 * `ember test --server`
 
-## Building
+### Building
 
 * `ember build`
 
